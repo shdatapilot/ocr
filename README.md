@@ -1,1 +1,0 @@
-# OCR-streamlt-to-heroku 
