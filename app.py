@@ -7,7 +7,8 @@ st.title("OCR")
 st.write()
 
 ocr = PaddleOCR(use_angle_cls=True, lang='en')
-uploaded_file = st.file_uploader("Choose an image...", type="jpg")
+print("loading image")
+uploaded_file = st.file_uploader("Choose an image...")
 if uploaded_file is not None:
     img_ = Image.open(uploaded_file).convert('RGB')
     image_ = np.array(img_)  # convert image to numpy array for ocr
